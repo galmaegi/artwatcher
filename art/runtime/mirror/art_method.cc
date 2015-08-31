@@ -282,7 +282,7 @@ void ArtMethod::Invoke(Thread* self, uint32_t* args, uint32_t args_size, JValue*
 
 // edit by galmaegi
 
-//  LOG(WARNING) <<"shorty : "<<shorty<<"\nJValue int : "<<result->GetJ() <<" double : "<< result->GetD()<<" object : "<<result->GetL();
+// LOG(WARNING) <<"shorty : "<<shorty<<"\nJValue int : "<<result->GetJ() <<" double : "<< result->GetD()<<" object : "<<result->GetL();
 
   // Push a transition back into managed code onto the linked list in thread.
   ManagedStack fragment;

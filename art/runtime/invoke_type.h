@@ -30,6 +30,24 @@ enum InvokeType {
   kMaxInvokeType = kInterface
 };
 
+// MSEC DONE
+const char* GetInvokeTypeToString(InvokeType type) {
+	switch (type) {
+	case kStatic:
+		return "kStatic";
+	case kDirect:
+		return "kDirect";
+	case kVirtual:
+		return "kVirtual";
+	case kSuper:
+		return "kSuper";
+	case kInterface:
+		return "kInterface";
+	default:
+		return "error"
+	}
+}
+
 std::ostream& operator<<(std::ostream& os, const InvokeType& rhs);
 
 }  // namespace art

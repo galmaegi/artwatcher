@@ -1311,6 +1311,7 @@ void Runtime::SetInstructionSet(InstructionSet instruction_set) {
 }
 
 void Runtime::SetCalleeSaveMethod(mirror::ArtMethod* method, CalleeSaveType type) {
+  // MSEC TODO
   DCHECK_LT(static_cast<int>(type), static_cast<int>(kLastCalleeSaveType));
   callee_save_methods_[type] = GcRoot<mirror::ArtMethod>(method);
 }

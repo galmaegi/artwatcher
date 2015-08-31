@@ -307,6 +307,7 @@ class Runtime {
   }
 
   void SetResolutionMethod(mirror::ArtMethod* method) {
+    // MSEC TODO
     resolution_method_ = GcRoot<mirror::ArtMethod>(method);
   }
 
@@ -321,9 +322,11 @@ class Runtime {
   }
 
   void SetImtConflictMethod(mirror::ArtMethod* method) {
+    // MSEC TODO
     imt_conflict_method_ = GcRoot<mirror::ArtMethod>(method);
   }
   void SetImtUnimplementedMethod(mirror::ArtMethod* method) {
+    // MSEC TODO
     imt_unimplemented_method_ = GcRoot<mirror::ArtMethod>(method);
   }
 
